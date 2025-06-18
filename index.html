@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Calculator</title>
+    <link rel="stylesheet" href="E:\Paravani Business Solutions Pvt Ltd\Collaborations\Guvi\Coding\Code Practice\Income Tax Expense Calculator\style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Expense Calculator</h1>
+        <div class="summary">
+            <div>
+                <span>Total Income:</span>
+                <span id="total-income">₹0</span>
+            </div>
+            <div>
+                <span>Total Expense:</span>
+                <span id="total-expense">₹0</span>
+            </div>
+            <div>
+                <span>Net Balance:</span>
+                <span id="net-balance">₹0</span>
+            </div>
+        </div>
+        <form id="entry-form">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type" required>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button type="submit" id="add-btn">Add</button>
+            <button type="button" id="reset-btn">Reset</button>
+        </form>
+        <div class="filters">
+            <label><input type="radio" name="filter" value="all" checked> All</label>
+            <label><input type="radio" name="filter" value="income"> Income</label>
+            <label><input type="radio" name="filter" value="expense"> Expense</label>
+        </div>
+        <ul id="entry-list"></ul>
+    </div>
+    <script src="E:\Paravani Business Solutions Pvt Ltd\Collaborations\Guvi\Coding\Code Practice\Income Tax Expense Calculator\app.js"></script>
+</body>
+</html>
